@@ -24,28 +24,28 @@ import turtle as turtle_module
 import random
 
 turtle_module.colormode(255)
-tim = turtle_module.Turtle()
-tim.speed("fastest")
-tim.penup()
-tim.hideturtle()
+dot = turtle_module.Turtle()
+dot.speed("fastest")
+dot.penup()
+dot.hideturtle()
 
 cols = [(244, 163, 191), (247, 201, 222), (235, 124, 160), (214, 89, 130), (162, 168, 124), (248, 242, 241),
          (251, 254, 254), (114, 153, 85), (134, 174, 102), (126, 144, 94)]
-tim.setheading(225)
-tim.forward(300)
-tim.setheading(0)
+dot.setheading(225)
+dot.forward(300)
+dot.setheading(0)
 number_of_dots = 100
 
 for dot_count in range(1, number_of_dots + 1):
-    tim.dot(20, random.choice(cols))
-    tim.forward(50)
+    dot.dot(20, random.choice(cols))
+    dot.forward(50)
 
     if dot_count % 10 == 0:
-        tim.setheading(90)
-        tim.forward(50)
-        tim.setheading(180)
-        tim.forward(500)
-        tim.setheading(0)
+        dot.setheading(90)
+        dot.forward(50)
+        dot.setheading(180)
+        dot.forward(500)
+        dot.setheading(0)
 
 screen = turtle_module.Screen()
 screen.exitonclick()

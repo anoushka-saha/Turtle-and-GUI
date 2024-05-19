@@ -7,7 +7,7 @@ from turtle import Turtle, Screen
 import random
 shape = Turtle()
 
-colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
+colours = ["HotPink", "LightPink", "PaleVioletRed", "Plum", "MediumOrchid", "Purple", "MediumSlateBlue", "MediumPurple"]
 
 def draw_shape(sides):
     angle = 360 / sides
@@ -18,7 +18,6 @@ def draw_shape(sides):
 for shape_side_n in range(3, 10):
     shape.color(random.choice(colours))
     draw_shape(shape_side_n)
-
 
 screen = Screen()
 screen.exitonclick()
